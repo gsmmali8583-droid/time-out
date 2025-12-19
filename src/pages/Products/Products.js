@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { FiFilter, FiGrid, FiList } from 'react-icons/fi';
+import { FiGrid, FiList } from 'react-icons/fi';
 import ProductCard from '../../components/Products/ProductCard';
 import LoadingSpinner from '../../components/UI/LoadingSpinner';
 

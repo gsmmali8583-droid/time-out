@@ -90,18 +90,18 @@ const Footer = () => {
               </div>
             </form>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Facebook">
+              <button type="button" className="social-link" aria-label="Facebook">
                 <FiFacebook />
-              </a>
-              <a href="#" className="social-link" aria-label="Twitter">
+              </button>
+              <button type="button" className="social-link" aria-label="Twitter">
                 <FiTwitter />
-              </a>
-              <a href="#" className="social-link" aria-label="Instagram">
+              </button>
+              <button type="button" className="social-link" aria-label="Instagram">
                 <FiInstagram />
-              </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              </button>
+              <button type="button" className="social-link" aria-label="LinkedIn">
                 <FiLinkedin />
-              </a>
+              </button>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiSearch, FiShoppingCart, FiUser, FiMenu, FiHeart, FiBell } from 'react-icons/fi';
+import { FiSearch, FiShoppingCart, FiMenu, FiHeart, FiBell } from 'react-icons/fi';
 import { useAuth } from '../../context/AuthContext';
 import { useCart } from '../../context/CartContext';
 import SearchBar from '../UI/SearchBar';
@@ -12,7 +12,6 @@ const Header = ({ isAdmin, onToggleSidebar }) => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
   const { isAuthenticated, user } = useAuth();
   const { getItemsCount } = useCart();

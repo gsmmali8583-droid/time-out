@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiTruck, FiShield, FiHeadphones, FiRefreshCw, FiStar, FiClock, FiZap, FiTrendingUp, FiGift, FiChevronLeft, FiChevronRight, FiMail, FiPlay } from 'react-icons/fi';
 import ProductCard from '../../components/Products/ProductCard';
-import LoadingSpinner from '../../components/UI/LoadingSpinner';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiCreditCard, FiTruck, FiMapPin, FiUser, FiMail, FiPhone } from 'react-icons/fi';
+import { FiCreditCard, FiMapPin, FiUser } from 'react-icons/fi';
 import { useCart } from '../../context/CartContext';
 import { useAuth } from '../../context/AuthContext';
 import { toast } from 'react-hot-toast';
@@ -67,12 +67,7 @@ const Checkout = () => {
     }
   };
 
-  const handleBillingAddressChange = (e) => {
-    setBillingAddress({
-      ...billingAddress,
-      [e.target.name]: e.target.value,
-    });
-  };
+
 
   const handleCardInfoChange = (e) => {
     setCardInfo({

@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
-import { useAuth } from './AuthContext';
 
 const WishlistContext = createContext();
 
@@ -44,7 +43,6 @@ const initialState = {
 
 export const WishlistProvider = ({ children }) => {
   const [state, dispatch] = useReducer(wishlistReducer, initialState);
-  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const savedWishlist = localStorage.getItem('wishlist');

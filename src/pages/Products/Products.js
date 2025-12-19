@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { FiGrid, FiList } from 'react-icons/fi';
 import ProductCard from '../../components/Products/ProductCard';
 import LoadingSpinner from '../../components/UI/LoadingSpinner';
+import { productsAPI } from '../../services/api';
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -16,29 +17,22 @@ const Products = () => {
   const subcategory = searchParams.get('subcategory');
   const search = searchParams.get('search');
 
-  // Fetch products with simple fetch
+  // Fetch products using API service
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const params = new URLSearchParams();
-        if (category) params.append('category', category);
-        if (subcategory) params.append('subcategory', subcategory);
-        if (search) params.append('search', search);
-        
-        const url = `http://localhost:5000/api/products?${params.toString()}`;
-        console.log('Fetching from:', url);
-        
-        const response = await fetch(url);
-        const data = await response.json();
-        
-        console.log('API Response:', data);
-        
-        if (data.success) {
-          setProducts(data.data.products || []);
-        } else {
-          setError('Failed to fetch products');
-        }
+        const params = {};
+        if (category) params.category = category;
+        if (subcategory) params.subcategory = subcategory;
+        if (search) params.search = search;
+
+        console.log('Fetching products with params:', params);
+
+        const response = await productsAPI.getProducts(params);
+        console.log('API Response:', response);
+
+        setProducts(response.data.products || []);
       } catch (err) {
         console.error('Fetch error:', err);
         setError('Network error');

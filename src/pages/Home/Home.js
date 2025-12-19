@@ -200,22 +200,22 @@ const Home = () => {
   // Testimonials
   const testimonials = [
     {
-      name: 'Rahul Sharma',
+      name: 'Dharmesh P',
       rating: 5,
       review: 'Amazing shopping experience! Fast delivery and excellent customer service.',
-      avatar: 'RS'
+      avatar: 'DP'
     },
     {
-      name: 'Priya Patel',
+      name: 'Gaurav G',
       rating: 5,
       review: 'Love the quality of products. Will definitely shop again!',
-      avatar: 'PP'
+      avatar: 'GG'
     },
     {
-      name: 'Amit Kumar',
+      name: 'Ganesh M',
       rating: 4,
       review: 'Great prices and easy returns. Highly recommended!',
-      avatar: 'AK'
+      avatar: 'GM'
     }
   ];
 

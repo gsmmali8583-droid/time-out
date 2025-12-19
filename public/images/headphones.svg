@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#333"/>
+  <path d="M120 150 Q200 100 280 150 L280 200 Q280 220 260 220 L240 220 Q220 220 220 200 L220 180 Q200 170 180 180 L180 200 Q180 220 160 220 L140 220 Q120 220 120 200 Z" fill="#555"/>
+  <rect x="120" y="200" width="40" height="80" rx="20" fill="#444"/>
+  <rect x="240" y="200" width="40" height="80" rx="20" fill="#444"/>
+  <text x="50%" y="85%" font-family="Arial" font-size="18" fill="#fff" text-anchor="middle">Sony WH-1000XM5</text>
+</svg>

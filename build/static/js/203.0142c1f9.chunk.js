@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkecommerce_client=self.webpackChunkecommerce_client||[]).push([[203],{8203(e,c,n){n.r(c),n.d(c,{default:()=>i});n(5043);var s=n(579);const i=()=>(0,s.jsx)("div",{className:"container",children:(0,s.jsx)("h1",{children:"Admin Analytics"})})}}]);
+//# sourceMappingURL=203.0142c1f9.chunk.js.map

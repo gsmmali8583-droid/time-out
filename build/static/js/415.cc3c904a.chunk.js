@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkecommerce_client=self.webpackChunkecommerce_client||[]).push([[415],{2415(e,c,s){s.r(c),s.d(c,{default:()=>a});s(5043);var n=s(579);const a=()=>(0,n.jsx)("div",{className:"container",children:(0,n.jsx)("h1",{children:"Admin Dashboard"})})}}]);
+//# sourceMappingURL=415.cc3c904a.chunk.js.map

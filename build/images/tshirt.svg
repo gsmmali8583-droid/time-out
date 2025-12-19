@@ -1,0 +1,7 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f39c12"/>
+  <path d="M140 140 L160 120 L180 140 L180 300 L220 300 L220 140 L240 120 L260 140 L260 300 L140 300 Z" fill="#e67e22"/>
+  <circle cx="180" cy="160" r="15" fill="#f39c12"/>
+  <circle cx="220" cy="160" r="15" fill="#f39c12"/>
+  <text x="50%" y="85%" font-family="Arial" font-size="20" fill="#000" text-anchor="middle">Casual T-Shirt</text>
+</svg>

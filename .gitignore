@@ -2,9 +2,6 @@
 node_modules/
 client/node_modules/
 
-# Client directory (has its own git repo)
-client/
-
 # Production builds
 client/build/
 build/
